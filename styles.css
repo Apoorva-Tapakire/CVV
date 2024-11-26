@@ -27,3 +27,8 @@ header p {
     font-size: 15px;
     margin: 5px 0;
 }
+
+section {
+    margin: 20px;
+    padding: 40px 20px;
+}
