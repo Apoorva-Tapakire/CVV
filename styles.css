@@ -3,6 +3,7 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 /* Header Section Styling */
@@ -14,16 +15,100 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 3rem;
     margin: 0;
 }
   
 header h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 10px 0;
 }
   
 header p {
-    font-size: 15px;
+    font-size: 1rem;
     margin: 5px 0;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+/* Section Styling */
+section {
+   margin: 1.4rem;
+   padding: 2rem 1.4rem;
+   background-color: white;
+   box-shadow: 3px 3px rgb(109, 101, 101);   
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+/* About Me Section */
+#aboutme {
+    background-color: aliceblue;
+}
+
+/* Skills Section */
+#skills {
+    background-color: rgb(245, 242, 237);
+}
+
+#skills ul {
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px;
+    background-color: rgb(198, 191, 191);
+    border-radius: 5px;
+}
+
+/* Education Section */
+#education {
+    background-color: rgb(232, 237, 237);
+  }
+
+/* Work Experience Section */
+#workexperience {
+    background-color: rgb(240, 252, 206);
+}
+
+/* footer section */
+footer {
+    text-align: center;
+    background-color: #6c6565;
+    color: white;
+    padding: 4px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    } 
+    
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+    section {
+        margin: 1.4rem;
+        padding: 1.8rem 0.9rem;
+    }
+    
 }
