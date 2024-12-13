@@ -3,60 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <h1>Apoorva Tapakire</h1>
-        <h2>Web Developer</h2>
-        <p>Email: apoorvatapakire123@gmail.com | Phone: 8549959630</p>
-    </header>
+     <header class="header">
+        <div>
+            <div class="logo">MyProduct</div>
+            <nav class="nav">
+            <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#cta" class="btn">Start Free Trial</a></li>
+            </ul>
+            </nav>
+            
+        </div>
+     </header>
 
-    <!-- About Me Section -->
-    <section>
-        <h2>About Me</h2>
-        <p>I'm Apoorva Tapakire, a web developer with a passion for creating clean, 
-           user-friendly, and innovative websites. I specialize in front-end development, using 
-           technologies like HTML, CSS, JavaScript, and framework like React. I thrive on turning 
-           complex problems into simple, intuitive digital experiences.</p>
-        <p>What excites me most about web development is the ability to continuously learn and adapt 
-            to new tools and trends, while solving real-world problems through code. I'm dedicated 
-            to delivering high-quality results that meet both user needs and business goals.</p>
+     <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div>
+            <h1>Welcome to MyProduct</h1>
+            <p>Transforming your daily workflow with innovative solutions.</p>
+            <a href="#features" class="btn">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+    <section id="features">
+    <div>
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Easy to Use</h3>
+                <p>Designed with simplicity in mind, allowing you to get started quickly and efficiently.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Fast Performance</h3>
+                <p>Enjoy lightning-fast performance that ensures smooth operation, 
+                    reducing wait times and helping you accomplish your tasks without interruptions.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Secure & Reliable</h3>
+                <p>Built with robust security features and industry-standard reliability, 
+                    our product ensures that your data is safe and accessible whenever you need it.</p>
+            </div>
+        </div>
+    </div>
     </section>
 
-    <!-- Skills Section -->
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div>
+            <h2>Pricing Plans</h2>
+            <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <p class="price">$10/month</p>
+                <ul>
+                    <li>Access to basic features</li>
+                    <li>1 GB storage</li>
+                </ul>
+                <a href="#" class="cta-btn">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price">$20/month</p>
+                <ul>
+                    <li>Access to all features</li>
+                    <li>10 GB storage</li>
+                </ul>
+                <a href="#" class="cta-btn">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <p class="price">$50/month</p>
+                <ul>
+                <li>All Premium features</li>
+                <li>Unlimited storage</li>
+                </ul>
+                <a href="#" class="cta-btn">Get Started</a>
+            </div>
+        </div>
+        </div>
     </section>
 
-    <!-- Education Section -->
-    <h2>Education</h2>
-    <p><strong>Bachelor of Engineering in Computer Science</strong><br> Jain University - 2021</p>
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div>
+            <h2>What Our Customers Say</h2>
+            <p>Hear from some of our happy users and how our product has made a difference for them.</p>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"This product has changed my life!"</p>
+                    <h4>- Customer 1</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Amazing features and great support."</p>
+                    <h4>- Customer 2</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Work Experience Section -->
-    <h2>Work Experience</h2>
-    <p><strong>Fornt-end Web Developer</strong> at Mphasis <br>From 2021 to Present</p>
-    <p><strong>Project: </strong>Salido Integration
-        <br>
-        <strong>Description of Project: </strong>SALIDO is an operating system designed specifically for restaurants, 
-        which provides a single platform to streamline restaurant operations. The platform's application 
-        is built using the Ruby on Rails framework. Additionally, SALIDO has an Extract, Transform, 
-        and Load (ETL) pipeline, which allows data to be efficiently moved and modified across 
-        different systems within the platform.
-    </p>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Apoorva Tapakire. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2024 MyProduct. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>    
+        </div>
     </footer>
-    
 </body>
 </html>
