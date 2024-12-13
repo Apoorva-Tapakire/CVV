@@ -3,27 +3,205 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header Section Styling */
-header {
-    background-color: #333;
-    color: white;
+/* Header Styles */
+.header {
+    background: #333;
+    color: #fff;
+    position: sticky;
+    padding: 1rem 2rem;
+    top: 0;
+}
+.header .logo {
+    font-size: 2rem;
+    font-weight: bold;
     text-align: center;
-    padding: 30px;
+}
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .nav ul li {
+    margin-left: 1.2rem;
+}
+.header .nav ul li a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+}
+.header .nav ul li a:hover {
+    background: #fff;
+    color: #333; 
+    border-radius: 0.3rem;
+}
+.header .nav .btn {
+    background: #8185be;
+    color: #fff;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.9rem;
+  }
+
+/*   Hero Section Styles  */
+.hero {
+    color: #241a1a;
+    text-align: center;
+    padding: 5rem;
+    background-color: rgb(182, 196, 209);
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.hero .btn {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    background: #dd721b;
+}
+.hero .btn:hover {
+    background: #8185be;
 }
 
-header h1 {
-    font-size: 40px;
-    margin: 0;
+/* Features Section Styles */
+#features {
+    background: #f3e9c8;
+    text-align: center;
+    padding: 4rem 0; 
 }
-  
-header h2 {
-    font-size: 20px;
-    margin: 10px 0;
+#features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
-  
-header p {
-    font-size: 15px;
-    margin: 5px 0;
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 }
+.feature-item {
+    background: #d6e3c1;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+    flex: 1;
+    margin: 1rem;
+    max-width: 30%;
+}
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.feature-item p {
+    font-size: 1rem;
+}
+
+ /* Pricing Section Styles */
+ #pricing {
+    background-color: rgb(216, 229, 234);
+    padding: 4rem;
+    text-align: center;
+ }
+ #pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+ }
+ .pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+ }
+ .pricing-card {
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+    flex: 1;
+    margin: 1rem;
+    max-width: 30%;
+ }
+ .pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+ }
+ .pricing-card .price {
+    font-size: 2rem;
+    margin: 1rem 0;
+ }
+ .pricing-card ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+ }
+ .pricing-card ul li {
+    margin-bottom: 0.5rem;
+ }
+ .pricing-card .cta-btn {
+    background: #dd721b;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    font-size: 1rem;
+ }
+ .pricing-card .cta-btn:hover {
+    background: #42be5d;
+ }
+
+ /* Testimonials Section Styles */
+ #testimonials {
+    background: #eccbcb;
+    text-align: center;
+    padding: 4rem 0;
+ }
+#testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.testimonial-item {
+    background: #efdea6;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+    flex: 1;
+    margin: 1rem;
+    max-width: 45%;
+ }
+ .testimonial-item p {
+    font-size: 1rem;
+ }
+ .testimonial-item h4 {
+    font-size: 0.9rem;
+ }
+
+ /* Footer Section Styles */
+ .footer {
+    text-align: center;
+    background-color: #6c6565;
+    color: white;
+    padding: 2rem;
+ }
+ .footer p {
+    margin-bottom: 1rem;
+ }
+ .footer .social-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 0.6rem;
+ }
+ .footer .social-links a:hover {
+    color: #dd721b;
+ }
